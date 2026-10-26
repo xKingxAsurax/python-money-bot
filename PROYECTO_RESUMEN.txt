@@ -1,0 +1,38 @@
+# 🚀 PROYECTO: EcoOfertasBot - Sistema de Ingresos Pasivos
+
+## 🎯 Objetivo Principal
+Crear un activo digital automatizado utilizando Python que rastree ofertas reales en internet y las presente al público para generar comisiones a través de marketing de afiliados. El objetivo es generar ingresos pasivos mediante el tráfico orgánico y la automatización.
+
+## 🛠️ Lo que hemos construido hasta ahora
+
+### 1. El Motor de Búsqueda (Scraper)
+- Implementación de un sistema de extracción de datos usando `requests` y `BeautifulSoup`.
+- Capacidad de entrar en tiendas online y extraer: Título del producto, Precio y URL.
+- Limpieza automática de datos (eliminación de símbolos de moneda y conversión a números).
+
+### 2. El Cerebro (Lógica de Negocio)
+- **Sistema de Memoria:** Implementación de una base de datos local (`ofertas.json`) para que el bot recuerde qué productos ya encontró y no repita ofertas.
+- **Filtro de Gangas:** Lógica para identificar solo los productos que realmente tienen un descuento atractivo.
+- **Generador de Enlaces:** Función para convertir URLs normales en links de afiliado (monetización).
+
+### 3. La Vitrina (Frontend Web)
+- **Generador de Web Automático:** El bot ya no solo imprime texto, sino que crea un archivo `index.html` profesional.
+- **Diseño Moderno:** Implementación de CSS moderno (cuadrícula responsiva, tarjetas de producto, efectos de hover y colores atractivos).
+- **Acceso Público:** Estructura preparada para ser subida a hosting gratuito (GitHub Pages/Netlify).
+
+### 4. Infraestructura Técnica
+- Configuración de entorno en `C:\Vscode\python-money-bot`.
+- Gestión de dependencias (`tweepy`, `bs4`, `requests`).
+- Implementación de manejo de errores para evitar que el bot se detenga por fallos de conexión.
+
+---
+
+## 📈 Próximos Pasos (La Hoja de Ruta)
+
+1. **Monetización Real:** Registrar el usuario en programas de afiliados (Amazon, AliExpress) y configurar el `affiliate_id`.
+2. **Despliegue en la Nube:** Subir el bot y la web a un servidor para que funcione 24/7 sin necesidad de tener la PC encendida.
+3. **Atracción de Tráfico:** Implementar la estrategia de Pinterest para atraer miles de visitas orgánicas a la web.
+4. **Escalado de Tiendas:** Añadir más URLs de tiendas reales y categorías (Tecnología, Hogar, Gaming).
+
+---
+*Documento generado automáticamente por Claude para el seguimiento del proyecto.*
