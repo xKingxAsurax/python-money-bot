@@ -1,8 +1,8 @@
-"""Configuracion central del bot. Edita aqui las tiendas y la URL del sitio."""
+﻿"""Configuracion central del bot. Edita aqui las tiendas y la URL del sitio."""
 from src.core.models import StoreConfig
 
 # URL publica del sitio (GitHub Pages). Cambiala cuando sepas la tuya.
-SITE_URL = "https://TU-USUARIO.github.io/python-money-bot"
+SITE_URL = "https://xKingxAsurax.github.io/python-money-bot"
 
 # Sitio de practica. Reemplazar por tiendas reales con afiliados.
 STORES = [
