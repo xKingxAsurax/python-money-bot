@@ -1,0 +1,17 @@
+[project]
+name = "ecoofertas-bot"
+version = "2.1.0"
+description = "Bot de ofertas con afiliados"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -3,36 +3,45 @@
 ## 🎯 Objetivo Principal
 Crear un activo digital automatizado utilizando Python que rastree ofertas reales en internet y las presente al público para generar comisiones a través de marketing de afiliados. El objetivo es generar ingresos pasivos mediante el tráfico orgánico y la automatización.
 
-## 🛠️ Lo que hemos construido hasta ahora
+## ✅ Implementaciones Completadas (Versión 2.0 - Producción)
 
-### 1. El Motor de Búsqueda (Scraper)
-- Implementación de un sistema de extracción de datos usando `requests` y `BeautifulSoup`.
-- Capacidad de entrar en tiendas online y extraer: Título del producto, Precio y URL.
-- Limpieza automática de datos (eliminación de símbolos de moneda y conversión a números).
+### 1. El Motor de Búsqueda (Scraper Profesional)
+- **Arquitectura Genérica**: Implementado un `GenericScraper` basado en selectores CSS. Ahora se pueden añadir nuevas tiendas sin escribir código nuevo, solo configurando selectores.
+- **Base Robusta**: Implementada la clase `BaseScraper` con manejo de User-Agents, timeouts y limpieza automática de precios (conversión de texto a float).
+- **Soporte de Imágenes**: El bot ahora extrae las URLs de las imágenes de los productos para una web visualmente atractiva.
 
-### 2. El Cerebro (Lógica de Negocio)
-- **Sistema de Memoria:** Implementación de una base de datos local (`ofertas.json`) para que el bot recuerde qué productos ya encontró y no repita ofertas.
-- **Filtro de Gangas:** Lógica para identificar solo los productos que realmente tienen un descuento atractivo.
-- **Generador de Enlaces:** Función para convertir URLs normales en links de afiliado (monetización).
+### 2. El Cerebro (Lógica de Negocio & Monetización)
+- **Sistema de Memoria**: `StorageManager` dedicado que utiliza `ofertas.json` para evitar duplicados y gestionar el estado de las ofertas.
+- **Monetización Dinámica**: Implementado `AffiliateService` con el patrón Strategy. Soporta formatos específicos para Amazon, AliExpress y otros proveedores genéricos.
+- **Seguridad de Secretos**: Integración con `.env` para proteger IDs de afiliados y claves API, siguiendo estándares de seguridad.
 
-### 3. La Vitrina (Frontend Web)
-- **Generador de Web Automático:** El bot ya no solo imprime texto, sino que crea un archivo `index.html` profesional.
-- **Diseño Moderno:** Implementación de CSS moderno (cuadrícula responsiva, tarjetas de producto, efectos de hover y colores atractivos).
-- **Acceso Público:** Estructura preparada para ser subida a hosting gratuito (GitHub Pages/Netlify).
+### 3. La Vitrina (Frontend Moderno)
+- **Diseño Premium**: Implementada la web usando **Tailwind CSS**. Diseño responsivo, moderno y optimizado para conversión.
+- **Filtros Interactivos**: Añadido un sistema de filtrado por categorías mediante JavaScript en el frontend, permitiendo al usuario navegar la web sin recargar la página.
+- **Galería Visual**: Implementación de tarjetas de producto con imágenes reales, precios destacados y botones de llamada a la acción (CTA).
 
-### 4. Infraestructura Técnica
-- Configuración de entorno en `C:\Vscode\python-money-bot`.
-- Gestión de dependencias (`tweepy`, `bs4`, `requests`).
-- Implementación de manejo de errores para evitar que el bot se detenga por fallos de conexión.
-
----
-
-## 📈 Próximos Pasos (La Hoja de Ruta)
-
-1. **Monetización Real:** Registrar el usuario en programas de afiliados (Amazon, AliExpress) y configurar el `affiliate_id`.
-2. **Despliegue en la Nube:** Subir el bot y la web a un servidor para que funcione 24/7 sin necesidad de tener la PC encendida.
-3. **Atracción de Tráfico:** Implementar la estrategia de Pinterest para atraer miles de visitas orgánicas a la web.
-4. **Escalado de Tiendas:** Añadir más URLs de tiendas reales y categorías (Tecnología, Hogar, Gaming).
+### 4. Infraestructura y Automatización (Cloud Ready)
+- **Orquestador Central**: Implementado `main.py` que coordina el flujo completo: Scrape $\rightarrow$ Filtro $\rightarrow$ Afiliación $\rightarrow$ Publicación.
+- **Despliegue Automatizado**: Configurado **GitHub Actions** para ejecutar el bot cada 6 horas automáticamente en la nube.
+- **Hosting Gratuito**: Implementado el despliegue automático a **GitHub Pages**, convirtiendo el proyecto en una web pública accesible desde cualquier lugar.
+- **Estándares de Código**: Todo el proyecto ha sido refactorizado siguiendo PEP 8, con anotaciones de tipo (Type Hinting) y logging profesional.
 
 ---
-*Documento generado automáticamente por Claude para el seguimiento del proyecto.*
+
+## ❌ TAREAS PENDIENTES (LO QUE FALTA HACER)
+
+### 1. Gestiones Administrativas (Fuera de Código)
+- [ ] **Registros de Afiliados**: Completar la solicitud de Amazon Afiliados, AliExpress Portals y otros programas para obtener los IDs reales.
+- [ ] **Configuración de Secretos**: Insertar los IDs reales obtenidos en el archivo `.env` y en los Secrets de GitHub.
+
+### 2. Implementaciones Técnicas Restantes
+- [ ] **Generador de Imágenes para Pinterest**: Crear un script (usando la librería `Pillow`) que genere imágenes verticales automáticamente con la foto del producto y el precio para atraer tráfico.
+- [ ] **Automatización de Pinterest**: Implementar la subida automática de esos Pines mediante la API de Pinterest o herramientas de automatización.
+- [ ] **Ampliación de Tiendas**: Buscar y configurar los selectores CSS de más tiendas reales (más allá de la de prueba) para diversificar las ofertas.
+
+### 3. Optimización y Crecimiento
+- [ ] **Análisis de Tráfico**: Implementar Google Analytics o un contador de visitas simple para saber qué ofertas funcionan mejor.
+- [ ] **Pruebas de Conversión**: Ajustar los colores y textos de los botones de la web para intentar que más gente haga clic.
+
+---
+*Documento actualizado el 26 de octubre de 2026.*

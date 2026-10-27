@@ -3,5 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .pytest_cache/
-index.html
-data/ofertas.json
+.venv/
+venv/
+*.egg-info/
+.DS_Store

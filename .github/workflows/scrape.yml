@@ -1,20 +1,24 @@
 name: EcoOfertasBot-AutoScrape
+
 on:
   schedule:
-    - cron: '0 */6 * * *' # Run every 6 hours
-  workflow_dispatch: # Allow manual trigger
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
@@ -26,12 +30,25 @@ jobs:
           AMAZON_ID: ${{ secrets.AMAZON_ID }}
           ALIEXPRESS_ID: ${{ secrets.ALIEXPRESS_ID }}
           GENERIC_ID: ${{ secrets.GENERIC_ID }}
-        run: python src/main.py
+        run: python -m src.main
 
-      - name: Commit and Push changes
+      - name: Commit DB changes
         run: |
           git config --global user.name "EcoOfertasBot"
           git config --global user.email "bot@ecoofertas.com"
-          git add data/ofertas.json index.html
-          git commit -m "Update offers: $(date)" || echo "No changes to commit"
-          git push
+          git add data/ofertas.json
+          git commit -m "Update offers: $(date -u)" || echo "No changes"
+
+      - name: Push DB
+        run: git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
