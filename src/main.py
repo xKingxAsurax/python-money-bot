@@ -10,7 +10,6 @@ def main():
     web_gen = WebGenerator(site_url=SITE_URL)
 
     # === LISTA DE PRODUCTOS DE HOTMART ===
-    # Aquí agregaremos los nuevos cursos que elijas
     hotmart_products = [
         {
             "title": "Curso Completo: Trading de Forex y Análisis Técnico",
@@ -18,7 +17,39 @@ def main():
             "url": "https://go.hotmart.com/P108258779B",
             "category": "Finanzas",
             "store": "Hotmart",
-            "image_url": "https://i.ytimg.com/vi/8Xy2Gj4Gq6E/maxresdefault.jpg"
+            "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "title": "MME VIP 2026 - Money Mastery Event",
+            "price": 1197000.0,
+            "url": "https://go.hotmart.com/H108258991W",
+            "category": "Finanzas",
+            "store": "Hotmart",
+            "image_url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "title": "Criptomonedas: Domina el Futuro del Dinero",
+            "price": 840000.0,
+            "url": "https://go.hotmart.com/F108259033U",
+            "category": "Finanzas",
+            "store": "Hotmart",
+            "image_url": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "title": "Curso Intensivo: Invirtiendo Desde Cero",
+            "price": 599000.0,
+            "url": "https://go.hotmart.com/W108259053J",
+            "category": "Finanzas",
+            "store": "Hotmart",
+            "image_url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=500&q=80"
+        },
+        {
+            "title": "Libertad Financiera con PNL - Nivel Avanzado",
+            "price": 425000.0,
+            "url": "https://go.hotmart.com/B108259067M",
+            "category": "Finanzas",
+            "store": "Hotmart",
+            "image_url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=500&q=80"
         }
     ]
 

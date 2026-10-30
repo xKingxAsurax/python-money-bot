@@ -5,10 +5,58 @@
     "url": "https://go.hotmart.com/P108258779B",
     "category": "Finanzas",
     "store": "Hotmart",
-    "image_url": "https://i.ytimg.com/vi/8Xy2Gj4Gq6E/maxresdefault.jpg",
+    "image_url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=500&q=80",
     "currency": "COP",
-    "first_seen": "2026-10-29T20:56:10.290046",
-    "last_seen": "2026-10-29T20:56:10.290071",
+    "first_seen": "2026-10-29T21:04:01.709772",
+    "last_seen": "2026-10-29T21:04:01.709799",
+    "prev_price": null
+  },
+  "https://go.hotmart.com/H108258991W": {
+    "title": "MME VIP 2026 - Money Mastery Event",
+    "price": 1197000.0,
+    "url": "https://go.hotmart.com/H108258991W",
+    "category": "Finanzas",
+    "store": "Hotmart",
+    "image_url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=500&q=80",
+    "currency": "COP",
+    "first_seen": "2026-10-29T21:04:01.768961",
+    "last_seen": "2026-10-29T21:04:01.768974",
+    "prev_price": null
+  },
+  "https://go.hotmart.com/F108259033U": {
+    "title": "Criptomonedas: Domina el Futuro del Dinero",
+    "price": 840000.0,
+    "url": "https://go.hotmart.com/F108259033U",
+    "category": "Finanzas",
+    "store": "Hotmart",
+    "image_url": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=500&q=80",
+    "currency": "COP",
+    "first_seen": "2026-10-29T21:04:01.790511",
+    "last_seen": "2026-10-29T21:04:01.790528",
+    "prev_price": null
+  },
+  "https://go.hotmart.com/W108259053J": {
+    "title": "Curso Intensivo: Invirtiendo Desde Cero",
+    "price": 599000.0,
+    "url": "https://go.hotmart.com/W108259053J",
+    "category": "Finanzas",
+    "store": "Hotmart",
+    "image_url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=500&q=80",
+    "currency": "COP",
+    "first_seen": "2026-10-29T21:04:01.812245",
+    "last_seen": "2026-10-29T21:04:01.812261",
+    "prev_price": null
+  },
+  "https://go.hotmart.com/B108259067M": {
+    "title": "Libertad Financiera con PNL - Nivel Avanzado",
+    "price": 425000.0,
+    "url": "https://go.hotmart.com/B108259067M",
+    "category": "Finanzas",
+    "store": "Hotmart",
+    "image_url": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=500&q=80",
+    "currency": "COP",
+    "first_seen": "2026-10-29T21:04:01.837203",
+    "last_seen": "2026-10-29T21:04:01.837216",
     "prev_price": null
   }
 }
