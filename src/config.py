@@ -24,3 +24,16 @@ STORES = [
     #     image_selector="img",
     # ),
 ]
+# ==== MercadoLibre Colombia: queries que SI venden ====
+MERCADOLIBRE_QUERIES = [
+    "celulares",
+    "computadores portatiles",
+    "audifonos bluetooth",
+    "smartwatch",
+    "zapatos deportivos",
+    "ropa mujer",
+    "electrodomesticos",
+    "tablets",
+    "videojuegos",
+    "mochilas",
+]
